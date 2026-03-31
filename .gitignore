@@ -1,0 +1,22 @@
+# Build output
+bin/
+obj/
+
+# Compiled binaries
+*.exe
+*.dll
+
+# Debugging files
+*.pdb
+
+# .NET runtime files
+*.runtimeconfig.json
+*.deps.json
+
+# Temporary files
+*.out
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
