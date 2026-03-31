@@ -55,5 +55,62 @@ Output (assembly):
 D=A
 
 ## Course
+## Project Structure
+
+hack-machine-code-disassembler
+│
+├── disassembler.cs                # Main program that performs disassembly
+├── DisassemblerProject.csproj     # C# project configuration
+├── Add.hack                       # Example Hack machine code program
+├── Double.hack                    # Example Hack machine code program
+├── Loop.hack                      # Example Hack machine code program
+├── Neg.hack                       # Example Hack machine code program
+├── Add.asm                        # Example assembly program
+└── README.md
+
+## Hack Instruction Format
+
+The Hack computer architecture uses two types of machine instructions.
+
+### A-instruction
+
+Used to load a value into the A register.
+
+Format:
+
+0vvvvvvvvvvvvvvv
+
+Example:
+
+0000000000000010
+
+Assembly equivalent:
+
+@2
+
+---
+
+### C-instruction
+
+Used for computation and control flow.
+
+Format:
+
+111accccccdddjjj
+
+Where:
+
+- `a` selects A register or memory
+- `c` represents the computation
+- `d` represents the destination
+- `j` represents jump conditions
+
+Example:
+
+1110110000010000
+
+Assembly equivalent:
+
+D=A
 
 Computer Organization (COMPORG)
